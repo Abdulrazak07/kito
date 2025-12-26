@@ -1,0 +1,8 @@
+{
+  "appId": "com.kito.app",
+  "appName": "Kito",
+  "server": {
+    "url": "https://feather-wood.vercel.app/",
+    "cleartext": true
+  }
+}
