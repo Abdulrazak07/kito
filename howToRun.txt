@@ -1,0 +1,6 @@
+install nodu modules
+ = npm install
+
+create assest folder
+
+mkdir -p android/app/src/main/assets
