@@ -2,7 +2,7 @@
   "appId": "com.tamilzo.app",
   "appName": "Tamilzo",
   "server": {
-    "url": "http://192.168.31.123:3000/",
+    "url": "https://www.tamilzo.com/",
     "cleartext": true
   },
   "plugins": {

@@ -1,4 +1,4 @@
-package com.kito.app;
+package com.tamilzo.app;
 
 import com.getcapacitor.BridgeActivity;
 
