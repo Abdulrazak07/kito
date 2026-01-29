@@ -17,16 +17,22 @@ public class MainActivity extends BridgeActivity {
     WebView webView = getBridge().getWebView();
 
     webView.setWebViewClient(new WebViewClient() {
-      @Override
-      public void onReceivedError(
-        WebView view,
-        WebResourceRequest request,
-        WebResourceError error
-      ) {
-        if (request.isForMainFrame()) {
-          view.loadUrl("file:///android_asset/offline.html");
-        }
-      }
-    });
+  @Override
+  public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+    return false;
+  }
+
+  @Override
+  public void onReceivedError(
+    WebView view,
+    WebResourceRequest request,
+    WebResourceError error
+  ) {
+    if (request.isForMainFrame()) {
+      view.loadUrl("file:///android_asset/offline.html");
+    }
+  }
+});
+
   }
 }
